@@ -7,7 +7,7 @@ public class Vehicle {
     public static final int EN_CARREGA = 3;
 
     // el valor d'aquest atribut és el mateix per a tots els objectes
-    private PENDENT int numVehiclesGestionats = 0;
+    private static int numVehiclesGestionats = 0;
 
     // atributs
 
@@ -21,11 +21,11 @@ public class Vehicle {
     // Constructors
 
     Vehicle(String matricula, String marca, String model, int autonomia) {
-        this.matricula = PENDENT;
-        this.marca = PENDENT;
-        this.model = PENDENT;
+        this.matricula = matricula;
+        this.marca = marca;
+        this.model = model;
         this.percentatge = 100;
-        this.autonomia = PENDENT;
+        this.autonomia = autonomia;
         this.estat = ATURAT;
         numVehiclesGestionats++;
     }
@@ -84,17 +84,20 @@ public class Vehicle {
 
     // canvia l'estat del vehicle a en moviment
     public void engegar() {
-        // PENDENT
+        this.estat = EN_MOVIMENT;
+        System.out.println("El vehicle está en Moviment");
     }
 
     // canvia l'estat del vehicle a aturat
     public void aturar() {
-        // PENDENT
+        this.estat = ATURAT;
+        System.out.println("El vehicle está Aturat");
     }
 
     // canvia l'estat del vehicle a en càrrega
     public void carregar() {
-        // PENDENT
+        this.estat = EN_CARREGA;
+        System.out.println("El vehicle está en Carrega");
     }
 
     // mètodes estàtics
