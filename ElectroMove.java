@@ -26,6 +26,7 @@ public class ElectroMove {
                 // Anem a crear un vehicle
                 System.out.println("*** CREACIÓ DEL VEHICLE ***\n");
                 Vehicle v1 = new Vehicle("1234ABC", "Byd", "Dolphin Surf", 322);
+                
 
                 // Anem a mostrar el vehicle
                 System.out.println("\nEl vehicle " + v1.getMarca() + " " + v1.getModel() + " ha estat creat.\n");
@@ -34,7 +35,7 @@ public class ElectroMove {
                 System.out.println("*** ACTUALITZACIÓ DE L'ESTAT DEL VEHICLE ***\n");
 
                 // Anem a posar en marxa el cotxe
-                // PENDENT
+                v1.setEstat(2);
                 System.out.println("El vehicle " + v1.getMarca() + " " + v1.getModel() + " està en estat: " + v1.getEstat()
                                                 + "\n");
 
@@ -46,7 +47,7 @@ public class ElectroMove {
 
                 // Anem a mostrar el punt de càrrega creat
                 System.out.println("El punt de càrrega " + pc2.getIdentificador() + " ha estat creat\n");
-                // PENDENT
+                System.out.println("Les seves dades són: " + pc2.toString() + "\n");
 
                 // Anem a mostrar la distància entre els dos punts de càrrega
                 // PENDENT
@@ -101,12 +102,12 @@ public class ElectroMove {
 		// Anem a crear el punt de càrrega
 		// PENDENT
 
-                System.out.println("El punt de càrrega amb identificador " + pc3.getIdentificador() +
+                /*System.out.println("El punt de càrrega amb identificador " + pc3.getIdentificador() +
                                 " ha estat creat correctament.\n");
                 System.out.println("Les seves dades són: " + pc3.toString() + "\n");
 
                 System.out.println("Nombre de vehicles creats: " + Vehicle.getNumVehiclesGestionats() + "\n");
-
+                */
                 // Anem a mostrar el nombre de punts de càrrega creats
 		// PENDENT
 

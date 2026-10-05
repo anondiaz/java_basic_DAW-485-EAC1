@@ -2,14 +2,14 @@ public class PuntCarrega {
 
     // declaració de les constants
 
-    public static int TYPE2 = 1;
-    public static int CCS = 2;
-    public static int CHADEMO = 3;
+    public static final int TYPE2 = 1;
+    public static final int CCS = 2;
+    public static final int CHADEMO = 3;
 
     // necessitem tres constants per a indicar que un punt de càrrega està disponible, ocupat o avariat. Els seus valors seran 1, 2 i 3.
-    public static int DISPONIBLE = 1;
-    public static int OCUPAT = 2;
-    public static int AVARIAT = 3;
+    public static final int DISPONIBLE = 1;
+    public static final int OCUPAT = 2;
+    public static final int AVARIAT = 3;
 
     // el valor d'aquest atribut és el mateix per a tots els objectes
     private static int numPuntsCarregaGestionats = 0;

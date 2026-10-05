@@ -4,27 +4,39 @@ public class Coordenades {
     public final double R = 6371.0;
 
     // Atributs: representem les coordenades amb la latitud i la longitud (números amb decimals)
-
-    // PENDENT
+    // PEMDENT Revisar
+    private double latitud;
+    private double longitud;
 
     // Constructor: construïm un objecte de tipus Coordenades a partir de la latitud i la longitud
-
-    // PENDENT
+    // PEMDENT Revisar
+    Coordenades(double latitud, double longitud) {
+        this.latitud = latitud;
+        this.longitud = longitud;
+        // PEMDENT numVehiclesGestionats++;
+    }
 
     // getters i setters
 
     // mètode per llegir la latitud (getLatitud)
-    // PENDENT
-
+    public double getLatitud() {
+        return this.latitud;
+    }
 
     // mètode per llegir la longitud (getLongitud)
-    // PENDENT
+    public double getLongitud() {
+        return this.longitud;
+    }
 
     // mètode per assignar un nou valor a la latitud (setLatitud)
-    // PENDENT
+    public void setLatitud(double latitud) {
+        this.latitud = latitud;
+    }
 
     // mètode per assignar un nou valor a la longitud  (setLongitud)
-    // PENDENT
+    public void setLongitud(double longitud) {
+        this.longitud = longitud;
+    }
 
     // mètodes instància
 
@@ -52,6 +64,9 @@ public class Coordenades {
 
     // toString(): mètode que retorna els valors de l'objecte. Per exemple: {Longitud: 2.1686, Latitud: 41.3874}
 
-    // PENDENT
+    @Override
+    public String toString() {
+        return "{Latitud: " + this.latitud + ", Longitud: " + this.longitud + "}";
     }
+    
 }
