@@ -2,12 +2,14 @@ public class PuntCarrega {
 
     // declaració de les constants
 
-    public PENDENT int TYPE2 = 1;
-    public PENDENT int CCS = 2;
-    public PENDENT int CHADEMO = 3;
+    public static int TYPE2 = 1;
+    public static int CCS = 2;
+    public static int CHADEMO = 3;
 
     // necessitem tres constants per a indicar que un punt de càrrega està disponible, ocupat o avariat. Els seus valors seran 1, 2 i 3.
-    // PENDENT
+    public static int DISPONIBLE = 1;
+    public static int OCUPAT = 2;
+    public static int AVARIAT = 3;
 
     // el valor d'aquest atribut és el mateix per a tots els objectes
     private static int numPuntsCarregaGestionats = 0;
@@ -26,7 +28,7 @@ public class PuntCarrega {
         this.ubicacio = new Coordenades(ubicacio.getLatitud(), ubicacio.getLongitud());
         this.potencia = potencia;
         this.connector = connector;
-        this.estat = PENDENT;
+        this.estat = DISPONIBLE;
         numPuntsCarregaGestionats++;
     }
 
@@ -45,30 +47,32 @@ public class PuntCarrega {
     }
 
     public int getConnector() {
-        // PENDENT
+        return this.connector;
     }
 
     public int getEstat() {
-        // PENDENT
+        return this.estat;
     }
 
    // setter: métode per assignar un nou valor a l'identificador
-   // PENDENT
+    public void setIdentificador(String identificador) {
+        this.identificador = identificador;
+    }
 
     public void setUbicacio(Coordenades ubicacio) {
         this.ubicacio = ubicacio;
     }
 
     public void setPotencia(double potencia) {
-        // PENDENT
+        this.potencia = potencia;
     }
 
     public void setConnector(int connector) {
-         // PENDENT
+         this.connector = connector;
     }
 
     public void setEstat(int estat) {
-         // PENDENT
+         this.estat = estat;
     }
 
     // mètodes instància
@@ -80,7 +84,9 @@ public class PuntCarrega {
     // mètodes estàtics
 
     // mètode per obtenir el nombre de punts de càrrega creats
-    // PENDENT
+    public static int numPuntsCarregaGestionats() {
+        return numPuntsCarregaGestionats;
+    }
 
     // toString()
     @Override
