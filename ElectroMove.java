@@ -10,25 +10,25 @@ public class ElectroMove {
 
                 // Anem a crear la ubicació (coordenades) d'un punt de càrrega
                 System.out.println("*** CREACIÓ DE LA UBICACIÓ ***\n");
-                Coordenades c1 = new PENDENT(41.3874, 2.1686);
+                Coordenades c1 = new Coordenades(41.3874, 2.1686);
 
                 // Anem a mostrar la ubicació creada
                 System.out.println("La ubicació del punt de càrrega és: " + c1.toString() + "\n");
 
                 // Anem a crear el punt de càrrega
                 System.out.println("*** CREACIÓ DEL PUNT DE CÀRREGA ***\n");
-                PuntCarrega pc1 = new PENDENT("BCN-001", c1, 128.50, PuntCarrega.CCS);
+                PuntCarrega pc1 = new PuntCarrega("BCN-001", c1, 128.50, PuntCarrega.CCS);
 
                 // Anem a mostrar el punt de càrrega creat
                 System.out.println("\nEl punt de càrrega " + pc1.getIdentificador() + " ha estat creat.\n");
-                // PENDENT
+                System.out.println("Les seves dades són: " + pc1.toString() + "\n");
 
                 // Anem a crear un vehicle
                 System.out.println("*** CREACIÓ DEL VEHICLE ***\n");
                 Vehicle v1 = new Vehicle("1234ABC", "Byd", "Dolphin Surf", 322);
 
                 // Anem a mostrar el vehicle
-                // PENDENT
+                System.out.println("\nEl vehicle " + v1.getMarca() + " " + v1.getModel() + " ha estat creat.\n");
                 System.out.println("Les seves dades són: " + v1.toString() + "\n");
 
                 System.out.println("*** ACTUALITZACIÓ DE L'ESTAT DEL VEHICLE ***\n");
@@ -40,9 +40,9 @@ public class ElectroMove {
 
                 // Anem a crear un altre punt de càrrega
                 System.out.println("*** CREACIÓ DE LA UBICACIÓ ***\n");
-                PENDENT c2 = new PENDENT(41.1189, 1.2445);
+                Coordenades c2 = new Coordenades(41.1189, 1.2445);
                 System.out.println("*** CREACIÓ DEL PUNT DE CÀRREGA ***\n");
-                PENDENT pc2 = new PENDENT("TAR-001", c2, 128.50, PuntCarrega.TYPE2);
+                PuntCarrega pc2 = new PuntCarrega("TAR-001", c2, 128.50, PuntCarrega.TYPE2);
 
                 // Anem a mostrar el punt de càrrega creat
                 System.out.println("El punt de càrrega " + pc2.getIdentificador() + " ha estat creat\n");
