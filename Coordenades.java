@@ -4,16 +4,13 @@ public class Coordenades {
     public final double R = 6371.0;
 
     // Atributs: representem les coordenades amb la latitud i la longitud (números amb decimals)
-    // PEMDENT Revisar
     private double latitud;
     private double longitud;
 
     // Constructor: construïm un objecte de tipus Coordenades a partir de la latitud i la longitud
-    // PEMDENT Revisar
     Coordenades(double latitud, double longitud) {
         this.latitud = latitud;
         this.longitud = longitud;
-        // PEMDENT numVehiclesGestionats++;
     }
 
     // getters i setters

@@ -73,10 +73,11 @@ public class ElectroMove {
                 int autonomia = scan.nextInt();
 
                 // Anem a crear el Vehicle
-	        // PENDENT
+                Vehicle v2 = new Vehicle(matricula, marca, model, autonomia);
+                System.out.println("\nEl vehicle amb matricula " + v2.getMatricula() + " ha estat creat correctament.\n");
 
                 // Anem a mostrar que hem creat el vehicle i quines són les seves dades
-		// PENDENT
+                System.out.println("Les seves dades són: " + v2.toString() + "\n");
 
 		// no traieu aquesta línia perquè es necessita per a gestionar l'entrada de dades per teclat
 		scan.nextLine();
@@ -99,18 +100,18 @@ public class ElectroMove {
                 double longitud = scan.nextDouble();
                 
 		// Anem a crear les coordenades
-		// PENDENT
+                Coordenades c3 = new Coordenades(latitud, longitud);
 		// Anem a crear el punt de càrrega
-		// PENDENT
+                PuntCarrega pc3 = new PuntCarrega("BCN-002", c3, 57.0, PuntCarrega.CHADEMO);
 
-                /*System.out.println("El punt de càrrega amb identificador " + pc3.getIdentificador() +
+                System.out.println("El punt de càrrega amb identificador " + pc3.getIdentificador() +
                                 " ha estat creat correctament.\n");
                 System.out.println("Les seves dades són: " + pc3.toString() + "\n");
 
                 System.out.println("Nombre de vehicles creats: " + Vehicle.getNumVehiclesGestionats() + "\n");
-                */
+                
                 // Anem a mostrar el nombre de punts de càrrega creats
-		// PENDENT
+                System.out.println("Nombre de punts de càrrega creats: " + PuntCarrega.numPuntsCarregaGestionats() + "\n");
 
                 System.out.println("\n*** FI PROVES INTERACTIVES ***\n");
                 scan.close();
