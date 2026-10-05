@@ -50,7 +50,8 @@ public class ElectroMove {
                 System.out.println("Les seves dades són: " + pc2.toString() + "\n");
 
                 // Anem a mostrar la distància entre els dos punts de càrrega
-                // PENDENT
+                System.out.println("La distància entre els dos punts de càrrega creats és: " + c1.distancia(c2));
+
 
                 System.out.println("\n*** FI DE LES PROVES ***\n");
 
