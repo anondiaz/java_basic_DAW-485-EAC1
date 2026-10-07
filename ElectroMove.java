@@ -102,7 +102,7 @@ public class ElectroMove {
 		// Anem a crear les coordenades
                 Coordenades c3 = new Coordenades(latitud, longitud);
 		// Anem a crear el punt de càrrega
-                PuntCarrega pc3 = new PuntCarrega("BCN-002", c3, 57.0, PuntCarrega.CHADEMO);
+                PuntCarrega pc3 = new PuntCarrega(identificador, c3, potencia, connector);
 
                 System.out.println("El punt de càrrega amb identificador " + pc3.getIdentificador() +
                                 " ha estat creat correctament.\n");
